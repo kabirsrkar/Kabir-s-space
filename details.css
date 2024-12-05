@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.movie-details {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 9px;
+    box-shadow: 9px 4px 8px rgba(255, 10, 10, 0.1);
+}
+
+.poster img {
+    width: 200%;
+    max-width: 200px;
+    margin: 0%;
+    border-radius: 8px;
+}
+
+.info {
+    flex: 1; /* Allow the details section to expand */
+    margin-left: 20px;
+}
+
+.info h1 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #007BFF;
+}
+
+.download-links {
+    margin-top: 20px;
+}
+
+.download-links a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Space between buttons */
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.download-links a:hover {
+    background-color: #0056b3;
+}
+
+/* MEDIA QUERY: For mobile screens */
+@media (max-width: 600px) {
+    .movie-details {
+        flex-direction: column; /* Stack poster and details vertically */
+        padding: 15px;
+    }
+
+    .poster img {
+        max-width: 100%; /* Full width for mobile */
+        margin-bottom: 160px; /* Add space below poster */
+    }
+
+    .info {
+        margin-left: 0; /* Remove side margin */
+    }
+
+    .info h1 {
+        font-size: 24px; /* Slightly smaller heading for mobile */
+    }
+
+    .download-links a {
+        font-size: 14px; /* Adjust button size */
+        padding: 8px 12px;
+    }
+}
